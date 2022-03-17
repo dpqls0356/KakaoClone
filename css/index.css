@@ -9,12 +9,12 @@
 @import "chat.css";
 
 /* @components */
-@import "css/components/status-bar.css";
-@import "css/components/navigation-bar.css";
-@import "css/components/icon-row.css";
-@import "css/components/alter-screen-header.css";
-@import "css/components/screen-header.css";
-@import "css/components/no-mobile.css";
+@import "components/status-bar.css";
+@import "components/navigation-bar.css";
+@import "components/icon-row.css";
+@import "components/alter-screen-header.css";
+@import "/kakaoclone_finishVersion/css/components/screen-header.css";
+@import "/kakaoclone_finishVersion/css/components/no-mobile.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
