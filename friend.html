@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/kakaoclone2/css/reset.css" />
+    <link rel="stylesheet" href="/kakaoclone2/css/index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend - Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:34</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icon">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <span>
+          <a href="/kakaoclone2/settings.html"
+            ><i class="fa-solid fa-gear fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+
+    <a class="friend-display-link">
+      <span><i class="fa-solid fa-info fa-2xs"></i></span>
+      <p>Friends' Names Display</p>
+      <span><i class="fa-solid fa-angle-right fa-xs"></i></span>
+    </a>
+
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="/kakaoclone2/img/som.png"
+            class="user-component-photo--xl"
+          />
+          <div class="user-component__text">
+            <div class="user-component__name">Yebeen</div>
+            <!-- <div class="user-component__subtitle">very nice day~!</div> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friend-screen__channel">
+        <div class="friend-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="/kakaoclone2/img/som.png"
+              class="user-component-photo--sm"
+            />
+            <div class="user-component__text">
+              <div class="user-component__name-not-bold">Channel</div>
+              <!-- <div class="user-component__subtitle">very nice day~!</div> -->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <span><i class="fa-solid fa-angle-right fa-xs"></i></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- nav>ul>li*4>a 로 작성하면 vsc가 자동으로 만들어줌  -->
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a" href="friend.html"
+            ><i class="fa-solid fa-user-large fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="chats.html"
+            ><span class="ma">1</span><i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="more.html"
+            ><span class="ellip"></span
+            ><i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="splash">
+      <i class="fa-solid fa-comment fa-2x"></i>
+    </div>
+    <div class="no-mobile">
+      <span>Your screen is too big..</span>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/b324382a19.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

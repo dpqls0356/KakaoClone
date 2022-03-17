@@ -1,0 +1,27 @@
+.settings-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.settings-box-row {
+  display: flex;
+  padding: 25px 0px;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.settings-box-row:last-child {
+  border: none;
+}
+.settings-box-row i {
+  margin-right: 10px;
+}
+.box-column {
+  display: flex;
+}
+.setting-box-column {
+  justify-content: space-between;
+}
+.setting-box-column > div:nth-child(2) {
+  opacity: 0.3;
+}
