@@ -13,8 +13,8 @@
 @import "components/navigation-bar.css";
 @import "components/icon-row.css";
 @import "components/alter-screen-header.css";
-@import "/kakaoclone2/css/components/screen-header.css";
-@import "/kakaoclone2/css/components/no-mobile.css";
+@import "components/screen-header.css";
+@import "components/no-mobile.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
