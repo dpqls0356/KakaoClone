@@ -8,11 +8,12 @@
   display: flex;
   align-items: center;
 }
-.user-component-col:last-child {
+.user-component__icon,
+.user-component__number {
   color: rgba(128, 128, 128, 0.977);
 }
-.user-component-col:last-child div:first-child {
-  margin-right: 5px;
+.user-component__number {
+  padding-right: 3px;
 }
 .user-component__img {
   width: 70px;
@@ -28,6 +29,17 @@
   font-size: 15px;
   margin-top: 8px;
   color: grey;
+}
+.user-component__music,
+.user-component__statue {
+  margin-right: 5px;
+}
+.user-component__music {
+  display: flex;
+  justify-content: center;
+}
+.user-component__music-icon {
+  margin-left: 5px;
 }
 /* size change */
 .user-component__img--la {

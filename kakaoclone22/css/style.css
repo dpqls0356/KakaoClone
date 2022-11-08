@@ -10,3 +10,7 @@
 @import "/css/screens/welcomeheader.css";
 @import "/css/screens/loginform.css";
 @import "/css/screens/friends.css";
+body {
+  height: 99vh;
+  font-family: "Noto Sans KR", sans-serif;
+}

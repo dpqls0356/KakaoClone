@@ -1,9 +1,5 @@
 @import "/css/reset.css";
 /* status-bar */
-body {
-  height: 100vh;
-  font-family: "Noto Sans KR", sans-serif;
-}
 .status-bar {
   position: sticky;
   top: 0;
