@@ -1,7 +1,7 @@
 @import "/css/reset.css";
 /* status-bar */
 body {
-  height: 200vh;
+  height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
 }
 .status-bar {

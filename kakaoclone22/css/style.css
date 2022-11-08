@@ -1,11 +1,12 @@
 /* exception */
-@import "/kokoaclone22/css/variables.css";
-@import "/kokoaclone22/css/reset.css";
+@import "/css/variables.css";
+@import "/css/reset.css";
 /* components */
-@import "/kokoaclone22/css/components/screenheader.css";
-@import "/kokoaclone22/css/components/statusbar.css";
-@import "/kokoaclone22/css/components/navigationbar.css";
+@import "/css/components/screenheader.css";
+@import "/css/components/statusbar.css";
+@import "/css/components/navigationbar.css";
+@import "/css/components/usercomponent.css";
 /* screens */
-@import "/kokoaclone22/css/screens/welcomeheader.css";
-@import "/kokoaclone22/css/screens/loginform.css";
-@import "/kokoaclone22/css/screens/friends.css";
+@import "/css/screens/welcomeheader.css";
+@import "/css/screens/loginform.css";
+@import "/css/screens/friends.css";
