@@ -1,6 +1,8 @@
+/* 전체스크린 */
 .chatting-screen {
   background-color: rgb(170, 191, 207);
 }
+/* 채팅창 헤더 */
 .chatting-screen-header {
   display: flex;
   align-items: center;
@@ -24,12 +26,15 @@
   display: flex;
   justify-content: flex-end;
 }
+/* 채팅창 */
 .chatting-screen-main {
   overflow-y: scroll;
   -ms-overflow-style: none;
   height: 80%;
   width: 100%;
   position: absolute;
+  padding: 0px var(--horizontal-space);
+  box-sizing: border-box;
   top: 100px;
   display: flex;
   flex-direction: column;
@@ -38,6 +43,7 @@
 .chatting-screen-main::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+/* 타임스탬프 */
 .chatting-screen-day {
   padding: 10px 15px;
   width: fit-content;
@@ -47,13 +53,66 @@
   font-size: 13px;
   color: white;
 }
+
 .chat-row {
   margin: 10px 0px;
   width: 100%;
   display: flex;
+}
+/* 사용자 레이아웃 */
+.sender-chat {
+  justify-content: flex-end;
+}
+/* 상대 레이아웃 */
+.receive-chat {
   justify-content: flex-start;
 }
+
 .chat-userimg {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.receive-chat .chat-username {
+  color: rgba(4, 4, 4, 0.476);
+  font-size: 13px;
+}
+/* 메시지창 공통 레이아웃 */
+.chat-message {
+  padding: 10px 10px;
+  width: fit-content;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.message-time {
+  position: absolute;
+  /* 나중에 이 스탬프 위치를 말풍선 크기에 따라 위치가 바뀌도록 만들기 */
+  color: rgba(4, 4, 4, 0.476);
+  font-size: 8px;
+}
+/* 상대방 메세지 레이아웃 */
+.receive-chat .chat-message {
+  background-color: white;
+  margin-top: 10px;
+  border-top-left-radius: 0px;
+}
+.receive-chat .chat-message-box {
+  position: relative;
+}
+.receive-chat .message-time {
+  left: 45px;
+  top: 25px;
+}
+/* 사용자 메세지 레이아웃 */
+.sender-chat .chat-message {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+}
+.sender-chat .chat-message-box {
+  position: relative;
+}
+.sender-chat .message-time {
+  right: 40px;
+  top: 25px;
 }
