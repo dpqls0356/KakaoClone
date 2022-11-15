@@ -1,0 +1,17 @@
+.chat-screen {
+  padding: 0px var(--horizontal-space);
+  overflow-y: scroll;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  height: 74%;
+  top: 110px;
+}
+.chat-screen .user-component {
+  padding: 13px 0px;
+  border-bottom: 1.5px solid rgba(136, 136, 136, 0.294);
+}
+.go-chat {
+  text-decoration: none;
+  color: black;
+}

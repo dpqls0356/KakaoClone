@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frineds - Kakao Clone</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar-column">
+        <span id="no-service">No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar-column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar-column">
+        <!-- icon -->
+        <span>11%</span>
+        <i class="fa-solid fa-battery-quarter fa-1x"></i>
+        <i class="fa-solid fa-bolt fa-1x"></i>
+      </div>
+    </div>
+
+    <header class="screen-header chat-screen-header">
+      <h1 class="screen-header-title">Chats</h1>
+      <div class="screen-header-icon">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <i class="fa-solid fa-comment-dots fa-lg"></i>
+        <i class="fa-solid fa-music fa-lg"></i>
+        <i class="fa-solid fa-gear fa-lg"></i>
+      </div>
+    </header>
+    <main class="chat-screen">
+    <a class ="go-chat" href="chat.html">
+    <div class="user-component">
+        <div class="user-component-col">
+            <img src="/img/kakao.png" class="user-component__img" />
+            <div class="user-component__text">
+              <div class="user-component__text__name">Kakao</div>
+              <div class="user-component__text__subtitle">Please Check your Account info</div>
+            </div>
+        </div>
+        <div class="user-component-col"></div>
+    </div>
+    </a>
+
+    <div class="user-component">
+        <div class="user-component-col">
+            <img src="/img/kakao.png" class="user-component__img" />
+            <div class="user-component__text">
+              <div class="user-component__text__name">Kakao</div>
+              <div class="user-component__text__subtitle">Please Check your Account info</div>
+            </div>
+        </div>
+        <div class="user-component-col"></div>
+    </div>
+
+    <div class="user-component">
+        <div class="user-component-col">
+            <img src="/img/kakao.png" class="user-component__img" />
+            <div class="user-component__text">
+              <div class="user-component__text__name">Kakao</div>
+              <div class="user-component__text__subtitle">Please Check your Account info</div>
+            </div>
+        </div>
+        <div class="user-component-col"></div>
+    </div>
+    
+    <div class="user-component">
+        <div class="user-component-col">
+            <img src="/img/kakao.png" class="user-component__img" />
+            <div class="user-component__text">
+              <div class="user-component__text__name">Kakao</div>
+              <div class="user-component__text__subtitle">Please Check your Account info</div>
+            </div>
+        </div>
+        <div class="user-component-col"></div>
+    </div>
+    </main>
+    <!-- usercomponent는 결국 하나의 요소이기때문에 main에 넣어 padding을 주는게 위치선정에 낫다. -->
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="/html/friends.html"
+            ><i class="fa-regular fa-user fa-2x"></i></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <div class="chat_count">10</div>
+          <a class="nav__link" href="/html/chats.html"
+            ><i class="fa-solid fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="/html/search.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="/html/find.html"
+            ><i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/b324382a19.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

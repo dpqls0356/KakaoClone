@@ -16,19 +16,19 @@
   padding-right: 3px;
 }
 .user-component__img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 40%;
   margin-right: 20px;
 }
 .user-component__text__name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .user-component__text__subtitle {
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 8px;
-  color: grey;
+  color: rgba(128, 128, 128, 0.699);
 }
 .user-component__music,
 .user-component__statue {
@@ -38,23 +38,25 @@
   display: flex;
   justify-content: center;
 }
+
 .user-component__music-icon {
   margin-left: 5px;
 }
 /* size change */
 .user-component__img--la {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 40%;
   margin-right: 20px;
 }
 .user-component__img--sm {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 40%;
   margin-right: 20px;
 }
-.user-component__text__name--not-bold {
+.user-component__text__name--not-bold,
+.user-component__music-name {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
 }
