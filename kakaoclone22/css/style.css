@@ -11,6 +11,7 @@
 @import "/css/screens/loginform.css";
 @import "/css/screens/friends.css";
 @import "/css/screens/chats.css";
+@import "/css/screens/chat.css";
 body {
   height: 99vh;
   font-family: "Noto Sans KR", sans-serif;
