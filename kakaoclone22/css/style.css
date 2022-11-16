@@ -12,7 +12,8 @@
 @import "/css/screens/friends.css";
 @import "/css/screens/chats.css";
 @import "/css/screens/chat.css";
+@import "/css/screens/search.css";
 body {
   height: 99vh;
-  font-family: "Noto Sans KR", sans-serif;
+  /* font-family: "Noto Sans KR", sans-serif; */
 }

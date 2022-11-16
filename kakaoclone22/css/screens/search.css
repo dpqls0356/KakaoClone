@@ -1,0 +1,50 @@
+.choice-search-way {
+  position: sticky;
+  top: 115px;
+  padding: 0px var(--horizontal-space);
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.choice-search-way-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choice-search-way-col div:nth-child(2) {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 350;
+}
+.choice-search-way-col:nth-child(3) div:nth-child(1) {
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+}
+.search-screen {
+  width: 100%;
+  position: relative;
+  top: 50px;
+  padding: 0px var(--horizontal-space);
+  box-sizing: border-box;
+}
+.recommended-friends {
+  border-top: 2px solid grey;
+  margin-top: 20px;
+}
+.recommended-friends-header {
+  color: rgba(128, 128, 128, 0.794);
+  font-size: 17px;
+}
+.recommended-friends-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 패딩이 잘 안먹음 css 다시 작성하기 */
+/* .search-screen이 아닌 .recommended-friends에 border설정시 제대로 나옴 */
