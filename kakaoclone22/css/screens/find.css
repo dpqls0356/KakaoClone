@@ -33,7 +33,7 @@
   top: 50px;
   padding: 0px var(--horizontal-space);
   box-sizing: border-box;
-  height: 54vh;
+  height: 53vh;
   overflow-y: scroll;
 }
 .recommended-friends {
@@ -111,7 +111,12 @@
   border-radius: 50%;
   margin-right: 5px;
 }
-.open-chat-moreinfo div:nth-child(1) {
-  margin-right: 2.5px;
-  border-right: 2px solid rgb(255, 21, 60);
+.open-chat-moreinfo {
+  color: rgb(158, 158, 158);
+}
+.active {
+  margin-left: 3px;
+  padding-left: 3px;
+  color: rgb(255, 88, 216);
+  border-left: 1px solid rgb(93, 93, 93);
 }

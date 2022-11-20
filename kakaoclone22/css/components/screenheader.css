@@ -19,3 +19,14 @@
 .screen-header .screen-header-icon i {
   margin-right: 15px;
 }
+.screen-header-icon i:hover {
+  animation: binggul 1s linear infinite;
+}
+@keyframes binggul {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

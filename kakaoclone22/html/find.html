@@ -17,6 +17,10 @@
     <!-- <link rel="stylesheet" href="/css/style.css" /> -->
   </head>
   <body>
+    <div class="hidden-page">
+      <div>      your screen is too big...</div>
+
+    </div>
     <div class="status-bar">
       <div class="status-bar-column">
         <span id="no-service">No Service</span>
@@ -40,7 +44,9 @@
       <div class="screen-header-icon">
         <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 
-        <i class="fa-solid fa-gear fa-lg"></i>
+        <a  class="setting-link" href="/html/settings.html">
+          <i class="fa-solid fa-gear fa-lg"></i
+        ></a>
       </div>
     </header>
     
@@ -85,7 +91,7 @@
                     <div class="open-chat-moreinfo">
                         <img src="/img/som.png">
                         <div>802 members</div>
-                        <div>Active</div>
+                        <div class="active">Active</div>
                     </div>
                 </div>
                 <div class="open-chat-col">
@@ -99,13 +105,14 @@
                     <div class="open-chat-moreinfo">
                         <img src="/img/som.png">
                         <div>802 members</div>
-                        <div>Active</div>
+                        <div class="active">Active</div>
                     </div>
                 </div>
                 <div class="open-chat-col">
                     <img src="/img/music1.jpg">
                 </div>
             </div>
+
         </div>
     </main>
     <!-- usercomponent는 결국 하나의 요소이기때문에 main에 넣어 padding을 주는게 위치선정에 낫다. -->

@@ -12,9 +12,28 @@
 @import "/css/screens/friends.css";
 @import "/css/screens/chats.css";
 @import "/css/screens/chat.css";
-@import "/css/screens/find.css";
 @import "/css/screens/more.css";
+@import "/css/screens/find.css";
+@import "/css/screens/settings.css";
 body {
   height: 99vh;
   /* font-family: "Noto Sans KR", sans-serif; */
+}
+.hidden-page {
+  display: none;
+  background-color: var(--yellow);
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: 600px) {
+  .hidden-page ~ * {
+    display: none;
+  }
+  .hidden-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
 }

@@ -51,3 +51,27 @@
 .friends-screen__channel-header ~ .user-component {
   margin-bottom: 25px;
 }
+
+#splash {
+  z-index: 100;
+  position: absolute;
+  background-color: var(--yellow);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  animation: removediv 1s forwards;
+  animation-delay: 1s;
+}
+@keyframes removediv {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
