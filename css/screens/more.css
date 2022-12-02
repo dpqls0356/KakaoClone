@@ -1,0 +1,64 @@
+.more-screen {
+  padding: 0px var(--horizontal-space);
+  top: 120px;
+  position: absolute;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.more-screen .user-component {
+  margin-bottom: 40px;
+}
+.more-screen .user-component__img {
+  width: 70px;
+  height: 70px;
+}
+.more-screen .user-component__text__name {
+  font-size: 20px;
+  font-weight: 800;
+}
+.more-screen .user-component__text__subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.more-screen .user-component__text__subtitle div:nth-child(2) {
+  color: red;
+  font-size: 13px;
+  font-weight: 800;
+  border: 2.5px solid red;
+  border-radius: 50%;
+  text-align: center;
+  width: 12px;
+  height: 12px;
+  margin-left: 7px;
+  padding-top: 2px;
+}
+
+#more-icon-row {
+  padding-bottom: 50px;
+  border-bottom: 1px solid gray;
+}
+.suggetions-main {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.suggetions-main div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggetions-main div div {
+  margin-top: 10px;
+  text-align: center;
+  color: grey;
+}
+.app-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}

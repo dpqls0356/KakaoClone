@@ -1,110 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kakao Clone</title>
+    <title>Frineds - Kakao Clone</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
   </head>
   <body>
+    <div class="hidden-page">     <div>      your screen is too big...</div>
+  </div>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No service</span>
+      <div class="status-bar-column">
+        <span id="no-service">No Service</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
-      <div class="status-bar__column">
-        <span>12:34</span>
+      <div class="status-bar-column">
+        <span>18:43</span>
       </div>
-      <div class="status-bar__column">
+      <div class="status-bar-column">
+        <!-- icon -->
         <span>11%</span>
-        <i class="fa-solid fa-battery-three-quarters"></i>
-        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-battery-quarter fa-1x"></i>
+        <i class="fa-solid fa-bolt fa-1x"></i>
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icon">
-        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-        <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-        <span><i class="fa-solid fa-music fa-lg"></i></span>
-        <span>
-          <a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
-        ></span>
+    <header class="screen-header chat-screen-header">
+      <h1 class="screen-header-title">Chats</h1>
+      <div class="screen-header-icon">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <i class="fa-solid fa-comment-dots fa-lg"></i>
+        <i class="fa-solid fa-music fa-lg"></i>
+        <a  class="setting-link" href="/html/settings.html">
+          <i class="fa-solid fa-gear fa-lg"></i
+        ></a>
       </div>
     </header>
-    <main class="main-screen">
-      <ul class="chat-main-screen">
-        <a href="chat.html">
-          <div class="user-component chats">
-            <div class="user-component__column">
-              <img src="img/kakao.png" class="user-component-photo" />
-              <div class="user-component__text">
-                <div class="user-component__name">KakaoTalk</div>
-                <div class="user-component__subtitle">
-                  Please check My Kakao Account info
-                </div>
-              </div>
+    <main class="chat-screen">
+    <a class ="go-chat" href="chat.html">
+    <div class="user-component">
+        <div class="user-component-col">
+            <img src="/img/kakao.png" class="user-component__img" />
+            <div class="user-component__text">
+              <div class="user-component__text__name">Kakao</div>
+              <div class="user-component__text__subtitle">Hi!</div>
             </div>
-            <div class="user-component__column">
-              <div>21:22</div>
-              <div class="message">1</div>
+        </div>
+        <div class="user-component-col"></div>
+    </div>
+    </a>
+
+    <div class="user-component">
+        <div class="user-component-col">
+            <img src="/img/som.png" class="user-component__img" />
+            <div class="user-component__text">
+              <div class="user-component__text__name">som</div>
+              <div class="user-component__text__subtitle">What are u doing!</div>
             </div>
-          </div></a
-        >
-        <a href="chat.html">
-          <div class="user-component">
-            <div class="user-component__column">
-              <img src="img/kakao.png" class="user-component-photo" />
-              <div class="user-component__text">
-                <div class="user-component__name">KakaoTalk</div>
-                <div class="user-component__subtitle">
-                  Please check My Kakao Account info
-                </div>
-              </div>
-            </div>
-            <div class="user-component__column">
-              <div>21:22</div>
-              <div class="message">1</div>
-            </div>
-          </div></a
-        >
-      </ul>
+        </div>
+        <div class="user-component-col"></div>
+    </div>
+
     </main>
-    <!-- nav>ul>li*4>a 로 작성하면 vsc가 자동으로 만들어줌  -->
+    <!-- usercomponent는 결국 하나의 요소이기때문에 main에 넣어 padding을 주는게 위치선정에 낫다. -->
+
     <nav class="nav">
-      <ul class="nav__ul">
-        <li class="nav__li">
-          <a class="nav__a" href="friend.html"
-            ><i class="fa-regular fa-user fa-2x"></i
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="/html/friends.html"
+            ><i class="fa-regular fa-user fa-2x"></i></i
           ></a>
         </li>
-        <li class="nav__li">
-          <a class="nav__a" href="chats.html"
-            ><span class="ma">1</span><i class="fa-solid fa-comment fa-2x"></i
+        <li class="nav__btn">
+          <div class="chat_count">10</div>
+          <a class="nav__link" href="/html/chats.html"
+            ><i class="fa-solid fa-comment fa-2x"></i
           ></a>
         </li>
-        <li class="nav__li">
-          <a class="nav__a" href="find.html"
+        <li class="nav__btn">
+          <a class="nav__link" href="/html/find.html"
             ><i class="fa-solid fa-magnifying-glass fa-2x"></i
           ></a>
         </li>
-        <li class="nav__li">
-          <a class="nav__a" href="more.html"
-            ><span class="ellip"></span
+        <li class="nav__btn">
+          <a class="nav__link" href="/html/more.html"
             ><i class="fa-solid fa-ellipsis fa-2x"></i
           ></a>
         </li>
       </ul>
     </nav>
-    <div class="no-mobile">
-      <span>Your screen is too big..</span>
-    </div>
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/b324382a19.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script
-    src="https://kit.fontawesome.com/b324382a19.js"
-    crossorigin="anonymous"
-  ></script>
 </html>

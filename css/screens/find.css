@@ -1,0 +1,122 @@
+.icon-row {
+  position: sticky;
+  top: 115px;
+  padding: 0px var(--horizontal-space);
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.icon-row-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-row-col div:nth-child(2) {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 350;
+}
+.icon-row-col:nth-child(3) div:nth-child(1) {
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+}
+.search-screen {
+  width: 100%;
+  position: relative;
+  top: 50px;
+  padding: 0px var(--horizontal-space);
+  box-sizing: border-box;
+  height: 53vh;
+  overflow-y: scroll;
+}
+.recommended-friends {
+  border-top: 2px solid rgba(210, 210, 210, 0.551);
+}
+.recommended-friends-header {
+  color: rgba(128, 128, 128, 0.641);
+  font-size: 17px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.recommended-friends-screen__noone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  color: rgba(128, 128, 128, 0.641);
+  font-size: 21px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(210, 210, 210, 0.551);
+}
+
+.open-chat-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.open-chat-header-title {
+  color: rgba(67, 67, 67, 0.641);
+}
+.open-chat-header-more {
+  color: rgba(128, 128, 128, 0.641);
+  display: flex;
+  align-items: center;
+}
+.open-chat-row {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-chat-col:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.open-chat-col:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.open-chat-col:nth-child(2) img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.open-chat-name {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+.open-chat-hashtag {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: rgba(67, 67, 67, 0.641);
+}
+.open-chat-moreinfo {
+  display: flex;
+  align-items: center;
+}
+.open-chat-moreinfo img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open-chat-moreinfo {
+  color: rgb(158, 158, 158);
+}
+.active {
+  margin-left: 3px;
+  padding-left: 3px;
+  color: rgb(255, 88, 216);
+  border-left: 1px solid rgb(93, 93, 93);
+}
