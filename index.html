@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/kakaoclone2/css/reset.css" />
-    <link rel="stylesheet" href="/kakaoclone2/css/index.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kakao Talk</title>
+    <title>Welcome To Kakao Clone</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <div class="hidden-page">
+      <div>your screen is too big...</div>
+    </div>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No service</span>
+      <div class="status-bar-column">
+        <span id="no-service">No Service</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
-      <div class="status-bar__column">
-        <span>12:34</span>
+      <div class="status-bar-column">
+        <span>18:43</span>
       </div>
-      <div class="status-bar__column">
+      <div class="status-bar-column">
+        <!-- icon -->
         <span>11%</span>
-        <i class="fa-solid fa-battery-three-quarters"></i>
-        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-battery-quarter fa-1x"></i>
+        <i class="fa-solid fa-bolt fa-1x"></i>
       </div>
     </div>
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KaKaoTalk</h1>
-      <p class="welcome-header__text">
-        If you have a kakao Account, log in with your email or phone number
+      <h1>Welcom to KakaoClone</h1>
+      <p>
+        If you have a Kakao Account ,<br />
+        log in with your email or phone number
       </p>
     </header>
-    <form id="login-form" action="friend.html" method="get">
-      <input
-        type="text"
-        class="log-in-emailOrPhonenumber"
-        placeholder="Email or phone number"
-      />
-      <input tpye="password" class="log-in-Password" placeholder="Password" />
+    <form class="login-form" action="friends.html" method="get">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
       <input type="submit" value="Log in" />
-
-      <a href="#">Find kakao Account or Password</a>
+      <button>Sign up</button>
     </form>
-    <div class="no-mobile">
-      <span>Your screen is too big..</span>
-    </div>
+    <a class="create-accounting-link" href="createaccounting.html"
+      >Find Kakao Account or Password</a
+    >
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/b324382a19.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script
-    src="https://kit.fontawesome.com/b324382a19.js"
-    crossorigin="anonymous"
-  ></script>
 </html>
