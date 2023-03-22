@@ -1,0 +1,46 @@
+.nav {
+  /* 아래에 고정시키는 법 */
+  position: fixed;
+  bottom: 0;
+  /* 넓이 지정을 안해주면 fixed시 크기가 작아짐 */
+  width: 100vw;
+  border-top: 1px solid rgba(65, 65, 65, 0.2);
+  background-color: rgb(239, 239, 239);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__btn {
+  padding: 20px 50px;
+}
+.nav__link i {
+  color: rgb(65, 65, 65);
+}
+.nav__btn:nth-child(2) {
+  position: relative;
+}
+.chat_count {
+  /* chats아이콘을 기준으로 위치선정하여 웹페이지 크기가 달라질때 chat의 기준으로 고정 */
+  position: absolute;
+  bottom: 37px;
+  left: 72px;
+  padding: 5px;
+  background-color: orangered;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  animation: bounsball 2s infinite;
+}
+@keyframes bounsball {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}

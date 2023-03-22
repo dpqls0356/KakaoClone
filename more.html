@@ -1,128 +1,126 @@
-<!-- i의 크기는 font-size로 하여 조절 가능 -->
-<!-- 회색 border, 회색 글자 고정값으로 하기 -root -->
-<!-- text-transform : uppercase () -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More - Kakao Clone</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
   </head>
   <body>
+    <div class="hidden-page">     <div>      your screen is too big...</div>
+  </div>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No service</span>
+      <div class="status-bar-column">
+        <span id="no-service">No Service</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
-      <div class="status-bar__column">
-        <span>12:34</span>
+      <div class="status-bar-column">
+        <span>18:43</span>
       </div>
-      <div class="status-bar__column">
+      <div class="status-bar-column">
+        <!-- icon -->
         <span>11%</span>
-        <i class="fa-solid fa-battery-three-quarters"></i>
-        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-battery-quarter fa-1x"></i>
+        <i class="fa-solid fa-bolt fa-1x"></i>
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">More</h1>
-      <div class="screen-header__icon">
-        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-        <span><i class="fa-solid fa-music fa-lg"></i></span>
-        <span>
-          <a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
-        ></span>
+    <header class="screen-header chat-screen-header">
+      <h1 class="screen-header-title">
+        More
+      </h1>
+      <div class="screen-header-icon">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <i class="fa-solid fa-music fa-lg"></i>
+        <a  class="setting-link" href="settings.html">
+          <i class="fa-solid fa-gear fa-lg"></i
+        ></a>
       </div>
     </header>
-
-    <main class="main-screen">
-      <div class="more user-component">
-        <div class="user-component__column">
-          <img src="img/som.png" class="user-component-photo" />
-          <div class="user-component__text">
-            <div class="user-component__name">yebeen</div>
-            <div class="user-component__subtitle">
-              <span>010-7777-7777</span>
-              <div>!</div>
+    
+    <main class="more-screen"> 
+        <div class="user-component">
+            <div class="user-component-col">
+                 <img src="/img/profile1.jpeg" class="user-component__img" />
+                <div class="user-component__text">
+                  <div class="user-component__text__name">Yebeen</div>
+                  <div class="user-component__text__subtitle">
+                    <div class="user-component__text_subtitle_phonenumber">010-7777-7777</div>
+                    <div>!</div>
+                  </div>
+                 </div>
             </div>
-          </div>
+            <div class="user-component-col">
+                <i class="fa-regular fa-message fa-2x"></i>
+            </div>
         </div>
-        <div class="user-component__column">
-          <i class="fa-regular fa-message fa-2x"></i>
+        <div class="icon-row" id="more-icon-row">
+            <div class="icon-row-col">
+                <div><i class="fa-regular fa-calendar fa-2x"></i></div>
+                <div>Calender</div>
+            </div>
+            <div class="icon-row-col">
+                <div><i class="fa-solid fa-box-archive fa-2x"></i></div>
+                <div>Talk Drive</div>
+            </div>
+            <div class="icon-row-col">
+              <i class="fa-solid fa-face-laugh-wink fa-2x "></i>
+              <div>Emoticons</div>
+            </div>
+            <div class="icon-row-col">
+                <div><i class="fa-solid fa-brush fa-2x"></i></div>
+                <div>Temes</div>
+            </div>
         </div>
-      </div>
-      <div class="icon-row">
-        <div class="icon-row__icon">
-          <span><i class="fa-regular fa-calendar"></i></span>
-          <div class="icon-row__text">Calender</div>
+        <div class="suggestions">
+          <div class="suggestions-header">Suggestions</div>
+          <div class="suggetions-main">
+          <div><img class="app-icon" src="/img/kakaostory.png"><div class="app-name">Kakao Story</div></div>
+          <div><img class="app-icon" src="/img/kakaofriends.png"><div class="app-name">Kakao friends</div></div>
+          <div><img class="app-icon" src="/img/kakaogem.jpg"><div class="app-name">Friends Gem</div></div>
         </div>
-        <div class="icon-row__icon">
-          <span><i class="fa-solid fa-box-archive"></i></span>
-          <div class="icon-row__text">Talk Drive</div>
         </div>
-        <div class="icon-row__icon">
-          <span><i class="fa-regular fa-face-grin-hearts"></i></span>
-          <div class="icon-row__text">Emoticons</div>
-        </div>
-        <div class="icon-row__icon">
-          <span><i class="fa-solid fa-brush"></i></span>
-          <div class="icon-row__text">Themes</div>
-        </div>
-      </div>
-      <div class="suggestions">
-        <div class="suggestions-title">Suggestions</div>
-        <div class="suggestions-icon">
-          <div>
-            <img src="img/kakaostory.png" />
-            <span>Kakao Story</span>
-          </div>
-          <div>
-            <img src="img/kakaofriends.png" />
-            <span>Kakao friends</span>
-          </div>
-          <div>
-            <img src="img/kakaogem.jpg" />
-            <span>Friends Gem</span>
-          </div>
-        </div>
-      </div>
     </main>
 
-    <!-- nav>ul>li*4>a 로 작성하면 vsc가 자동으로 만들어줌  -->
+
     <nav class="nav">
-      <ul class="nav__ul">
-        <li class="nav__li">
-          <a class="nav__a" href="friend.html"
-            ><i class="fa-regular fa-user fa-2x"></i
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-regular fa-user fa-2x"></i></i
           ></a>
         </li>
-        <li class="nav__li">
-          <a class="nav__a" href="chats.html"
-            ><span class="ma">1</span><i class="fa-regular fa-comment fa-2x"></i
-          ></a>
+        <li class="nav__btn">
+          <div class="chat_count">10</div>
+          <a class="nav__link" href="chats.html"
+            ><i class="fa-regular fa-comment fa-2x"></i></a>
         </li>
-        <li class="nav__li">
-          <a class="nav__a" href="find.html"
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
             ><i class="fa-solid fa-magnifying-glass fa-2x"></i
           ></a>
         </li>
-        <li class="nav__li">
-          <a class="nav__a" href="more.html"
-            ><span class="ellip"></span
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
             ><i class="fa-solid fa-ellipsis fa-2x"></i
           ></a>
         </li>
       </ul>
     </nav>
-    <div class="no-mobile">
-      <span>Your screen is too big..</span>
-    </div>
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/b324382a19.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script
-    src="https://kit.fontawesome.com/b324382a19.js"
-    crossorigin="anonymous"
-  ></script>
 </html>

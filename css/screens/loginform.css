@@ -1,0 +1,57 @@
+@import "/css/reset.css";
+
+/* login-form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.login-form input,
+.login-form button,
+.create-accounting-link {
+  border: 0;
+}
+.login-form input:nth-child(1),
+.login-form input:nth-child(2) {
+  height: 50px;
+  padding: 5px 0px;
+  border-bottom: 1.8px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.login-form input:nth-child(1)::placeholder,
+.login-form input:nth-child(2)::placeholder {
+  font-size: 18px;
+  font-weight: lighter;
+  color: rgb(211, 211, 211);
+}
+.login-form input:nth-child(1):focus,
+.login-form input:nth-child(2):focus {
+  outline: none;
+  border-color: var(--yellow);
+}
+.login-form input:nth-child(3),
+.login-form button {
+  font-size: 15px;
+  color: black;
+  background-color: rgb(239, 239, 239);
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+.login-form input:nth-child(3):hover,
+.login-form button:hover {
+  background-color: var(--yellow);
+}
+.create-accounting-link {
+  /* 링크 밑줄 지우기 */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: black;
+}
+/* 각각 css를 설정하는 것도 좋지만 :not([])을 사용해 특정 부분을 제외하고 적용하도록 할 수 있음*/

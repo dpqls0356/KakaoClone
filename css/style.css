@@ -1,0 +1,39 @@
+/* exception */
+@import "/css/variables.css";
+@import "/css/reset.css";
+/* components */
+@import "/css/components/screenheader.css";
+@import "/css/components/statusbar.css";
+@import "/css/components/navigationbar.css";
+@import "/css/components/usercomponent.css";
+/* screens */
+@import "/css/screens/welcomeheader.css";
+@import "/css/screens/loginform.css";
+@import "/css/screens/friends.css";
+@import "/css/screens/chats.css";
+@import "/css/screens/chat.css";
+@import "/css/screens/more.css";
+@import "/css/screens/find.css";
+@import "/css/screens/settings.css";
+body {
+  height: 99vh;
+  /* font-family: "Noto Sans KR", sans-serif; */
+}
+.hidden-page {
+  display: none;
+  background-color: var(--yellow);
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: 600px) {
+  .hidden-page ~ * {
+    display: none;
+  }
+  .hidden-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+}
