@@ -33,8 +33,29 @@
   top: 50px;
   padding: 0px var(--horizontal-space);
   box-sizing: border-box;
-  height: 53vh;
+  height: 56%;
   overflow-y: scroll;
+}
+@media (min-height:730px) {
+  .search-screen{
+    height: 58%;
+  }
+}
+@media (min-height:770px) {
+  .search-screen{
+    height: 60%;
+  }
+  
+}
+@media (min-height:810px) {
+  .search-screen{
+    height: 62%;
+  }
+}
+@media (min-height:840px) {
+  .search-screen{
+    height: 64%;
+  }
 }
 .recommended-friends {
   border-top: 2px solid rgba(210, 210, 210, 0.551);

@@ -35,6 +35,17 @@
   box-sizing: border-box;
   padding: 0px var(--horizontal-space);
 }
+@media (min-height:711px) {
+  .friends-screen{
+    height: 73%;
+  }
+}
+@media (min-height:830px) {
+  .friends-screen{
+    height: 74%;
+  }
+  
+}
 .friends-screen .user-component:first-child {
   margin-top: 10px;
 }
